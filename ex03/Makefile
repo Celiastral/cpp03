@@ -1,12 +1,12 @@
-NAME = ScavTrap
+NAME = DiamondTrap
 
 C++ = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -O2 -g3
 
 OBJS_DIR = .obj/
 SRC_DIR = srcs/
-HEADERS = include/ClapTrap.hpp include/ScavTrap.hpp 
-SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
+HEADERS = include/ClapTrap.hpp include/ScavTrap.hpp include/FragTrap.hpp include/DiamondTrap.hpp
+SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 
 OBJS = $(addprefix $(OBJS_DIR), $(SRCS:.cpp=.o)) 
 
@@ -18,10 +18,10 @@ obj :
 	@mkdir -p $(OBJS_DIR)
 
 $(NAME) : $(OBJS)
-	@echo -n "$(Red)Compilation de ScavTrap ..${NC}" && sleep 0.2
-	@echo -n "$(Red)\rCompilation de ScavTrap ...${NC}"
+	@echo -n "$(Red)Compilation de DiamondTrap ..${NC}" && sleep 0.2
+	@echo -n "$(Red)\rCompilation de DiamondTrap ...${NC}"
 	$(C++) $^ $(CPPFLAGS) -o $(NAME) && sleep 0.1
-	@echo "$(Green)\r------Compilation de ScavTrap finie !-------${NC}"
+	@echo "$(Green)\r------Compilation de DiamondTrap finie !-------${NC}"
 
 $(OBJS_DIR)%.o : $(SRC_DIR)%.cpp Makefile $(HEADERS)
 	$(C++) $(CPPFLAGS) -c $< -o $@
