@@ -6,7 +6,7 @@
 /*   By: eandre <eandre@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 18:00:48 by eandre            #+#    #+#             */
-/*   Updated: 2024/09/11 19:48:46 by eandre           ###   ########.fr       */
+/*   Updated: 2024/09/15 18:53:25 by eandre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,5 @@ int	main(void)
 	trap.attack("Little children");
 	clap.takeDamage(10);
 	clap.beRepaired(10);
+	trap.beRepaired(10);
 }
