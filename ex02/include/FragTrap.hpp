@@ -6,7 +6,7 @@
 /*   By: eandre <eandre@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 13:33:51 by eandre            #+#    #+#             */
-/*   Updated: 2024/09/12 14:07:34 by eandre           ###   ########.fr       */
+/*   Updated: 2024/09/15 19:00:50 by eandre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,6 @@ class FragTrap : public ClapTrap
 		~FragTrap();
 		FragTrap	&operator=(const FragTrap &other_FragTrap);
 		void		highFivesGuys(void);
-	protected:
-
-	private:
-	
 };
 
 #endif
