@@ -6,7 +6,7 @@
 /*   By: eandre <eandre@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 18:00:48 by eandre            #+#    #+#             */
-/*   Updated: 2024/09/11 21:12:58 by eandre           ###   ########.fr       */
+/*   Updated: 2024/09/15 18:56:49 by eandre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,7 @@ int	main(void)
 	trap.attack("Little children");
 	scav.takeDamage(10);
 	scav.beRepaired(10);
+	scav.guardGate();
+	scav.takeDamage(1000);
+	scav.guardGate();
 }
