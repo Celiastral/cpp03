@@ -6,7 +6,7 @@
 /*   By: eandre <eandre@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 18:00:48 by eandre            #+#    #+#             */
-/*   Updated: 2024/09/12 21:33:26 by eandre           ###   ########.fr       */
+/*   Updated: 2024/09/15 19:04:55 by eandre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int	main(void)
 	DiamondTrap_.set_Energy_points(1);
 	DiamondTrap_.attack((std::string)"Little children");
 	DiamondTrap_2.takeDamage(300);
+	DiamondTrap_Copy.guardGate();
+	DiamondTrap_Copy.guardGate();
 	DiamondTrap_Copy.highFivesGuys();
 	DiamondTrap_.attack((std::string)"Little children");
 	DiamondTrap_2.highFivesGuys();
