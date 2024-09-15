@@ -6,7 +6,7 @@
 /*   By: eandre <eandre@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 18:00:41 by eandre            #+#    #+#             */
-/*   Updated: 2024/09/11 19:26:05 by eandre           ###   ########.fr       */
+/*   Updated: 2024/09/15 18:57:40 by eandre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ class ClapTrap
 		void		set_Energy_points(unsigned int Ep);
 		void		beRepaired(unsigned int amount);
 	private:
-		unsigned int	Hit_points;
-		unsigned int	Energy_points;
-		unsigned int	Attack_damage;
+		int	Hit_points;
+		int	Energy_points;
+		int	Attack_damage;
 		std::string		name;
 };
 
